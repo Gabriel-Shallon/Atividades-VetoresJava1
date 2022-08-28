@@ -13,8 +13,7 @@ public class Atividade028 {
                int [] vetA = new int[10];
          
          int [] vetB = new int[vetA.length];
-         
-         int [] vetC = new int[vetA.length];
+        
 
          UIManager.put("OptionPane.yesButtonText","Números aleatórios");
          UIManager.put("OptionPane.noButtonText","Números selecionados");
