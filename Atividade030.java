@@ -37,7 +37,7 @@ public class Atividade030 {
             
          int impares = 0;
          for (int i = 0; i < vetA.length; i++){
-     JOptionPane.showMessageDialog(null, impares+"\n"+i);
+     
              if ((vetA[i]%2)==1){
          impares++;
              }   
@@ -45,14 +45,15 @@ public class Atividade030 {
          
           int pares = 0;
          for (int i = 0; i < vetA.length; i++){
-     JOptionPane.showMessageDialog(null, pares+"\n"+i);
+    
              if ((vetA[i]%2)==0){
          pares++;
              }   
          }
+
+
          
          int [] vetB = new int[pares+1];
-
          int [] vetC = new int[impares+1];
 
          int o = 0;
@@ -62,32 +63,33 @@ public class Atividade030 {
              if ((vetA[i]%2)==1){
                  
                 o++;
-            vetC[o] = vetA[i];
+            vetC[o-1] = vetA[i];
 
              }   
      
              if ((vetA[i]%2)==0){
                 
                 u++;
-            vetB[u] = vetA[i];
+            vetB[u-1] = vetA[i];
+
            }   
-           JOptionPane.showMessageDialog(null, vetC[o]+"\n"+vetB[u]+"\n"+i); 
+           
+         }
+
+
+         for (int i = 0; i < vetA.length; i++){
+
+
+            JOptionPane.showMessageDialog(null, "Vetor A posição ["+(i+1)+"]: "+vetA[i]);
+
+
          }
 
 
          for (int i = 0; i < pares; i++){
 
 
-            JOptionPane.showMessageDialog(null, "Vetor A:"+vetA[i]);
-
-
-         }
-
-
-         for (int i = 0; i < pares; i++){
-
-
-            JOptionPane.showMessageDialog(null, "Vetor B(números pares do vetor A):"+vetB[i]);
+            JOptionPane.showMessageDialog(null, "Vetor B posição ["+(i+1)+"](números pares do vetor A): "+vetB[i]);
 
 
          }
@@ -95,7 +97,7 @@ public class Atividade030 {
          for (int i = 0; i < impares; i++){
 
 
-            JOptionPane.showMessageDialog(null, "Vetor C(números impares do vetor A):"+vetC[i]);
+            JOptionPane.showMessageDialog(null, "Vetor C posição["+(i+1)+"](números impares do vetor A): "+vetC[i]);
 
 
          }
