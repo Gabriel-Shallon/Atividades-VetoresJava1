@@ -41,6 +41,7 @@ public class Atividade037 {
                 for (int i = 1; i <= vetA[j]; i++){
 
                     vetB[j] = vetB[j]*i;
+                    
 
                 }
 
